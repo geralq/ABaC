@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel-Restaurante ABaC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="inicio.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-primary">ABaC<span class="text-secondary font-weight-normal">Barcelona</span></h1>
+                </a>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="inicio.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-primary">ABaC<span class="text-white font-weight-normal">Barcelona</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="inicio.html" class="nav-item nav-link">Inicio</a>
+                    <a href="menú.html" class="nav-item nav-link">Menú</a>
+                    <a href="habitaciones.html" class="nav-item nav-link">Habitaciones</a>
+                    <a href="reservas.html" class="nav-item nav-link active">Reservas</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bg-white border border-top-0 p-4 mb-3">
+                        <h6 class="text-uppercase font-weight-bold mb-3">Reserve ahora</h6>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control p-4" placeholder="Nombre" required="Requerido"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control p-4" placeholder="Correo electrónico" required="Requerido"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14">
+                                <h4>
+                                    Seleccione el número de adultos:
+                                        <select class="form-dropdown" id="input_14" name="q14_roomType" style="width:310px" data-component="dropdown">
+                                            <option>Adultos</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                </h4>
+                            </label>
+                            <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14">
+                                <h4>
+                                    Selecciones el número de niños:
+                                        <select class="form-dropdown" id="input_14" name="q14_roomType" style="width:310px" data-component="dropdown">
+                                            <option>Niños</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                </h4>
+                            </label>
+                            <div class="form-group p-8">
+                                <h4>Fecha de entrada:
+                                    <input type="date" id="Test_DatetimeLocal" required="Requerido">
+                                    Fecha de salida:
+                                    <input type="date" id="Test_DatetimeLocal" required="Requerido">
+                                </h4>
+                            </div>
+                            <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14">
+                                <h4>
+                                    Elija modelo de habitación:
+                                    <select class="form-dropdown" id="input_14" name="q14_roomType" style="width:310px" data-component="dropdown">
+                                        <option>---</option>
+                                        <option data-calcvalue="100" value="Single ($100)"> Habitación Comfort (217€) </option>
+                                        <option data-calcvalue="100" value="Double ($100)"> Habitación Comfort Terraza (281€) </option>
+                                        <option data-calcvalue="200" value="Queen ($200)"> Habitación Deluxe (255€)</option>
+                                        <option data-calcvalue="210" value="King ($210)"> Habitación Junior Suite (332€) </option>
+                                        <option data-calcvalue="350" value="2-Bedroom ($350)"> Habitación Suite (383€) </option>
+                                    </select>
+                                </h4>
+                                <h4>
+                                    Escoja uno de nuestros servicios:
+                                    <div class="form-single-column" role="group" aria-labelledby="label_11" data-component="radio">
+                                        <span class="form-radio-item" style="clear:left">
+                                            <span class="dragger-item"></span>
+                                        <input type="radio" aria-describedby="label_11" class="form-radio" id="input_11_0" name="q11_leasePocket" value="Yes" data-calcvalue="5">
+                                        <label id="label_input_11_0" for="input_11_0"> Desayuno </label>
+                                        </span>
+                                        <br>
+                                        <span class="form-radio-item" style="clear:left">
+                                            <span class="dragger-item"></span>
+                                        <input type="radio" aria-describedby="label_11" class="form-radio" id="input_11_1" name="q11_leasePocket" value="No" data-calcvalue="0">
+                                        <label id="label_input_11_1" for="input_11_1"> Sin desayuno </label>
+                                        </span>
+                                    </div>
+                                </h4>
+                            </label>
+                            <div>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
+                                    type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-2">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contáctos</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Av. del Tibidabo, 1, BCN</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>933 19 66 00</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@abacbarcelona.com</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Síguenos</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://twitter.com/abac_barcelona?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://es-es.facebook.com/ABaCRestaurantHotel/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.instagram.com/abachotelrestaurant/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div aling="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.316630402842!2d2.134180215066082!3d41.41064490251651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4980f8d569c8d%3A0x5967653f38c116ff!2sABaC%20Restaurant!5e0!3m2!1ses!2ses!4v1663966672192!5m2!1ses!2ses" width="750" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
